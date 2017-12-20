@@ -18,9 +18,9 @@ import org.codehaus.jackson.node.ArrayNode;
 public class dataAggregator {
 
 	final static String FILE_NAME = "/Users/Shared/testData/PROD_data_check_201217.xlsx";
-	final static String buyOnlineUrl = "http://vtp.audi.com/restapi/v1/adegwb/search/car;t_online=1/results";
-	final String carDealerUrl = "http://vtp.audi.com/restapi/v1/adegwb/datastore/cars/";
-	final String carDealerByIdUrl = "http://www.audi-boerse.de/gebrauchtwagen/url-2_1-search.htm?act=offer&carid=";
+	final static String buyOnlineUrl = "";
+	final String carDealerUrl = "";
+	final String carDealerByIdUrl = "";
 	final static String xPageItems = "100";
 	static int numberOfReturnedCars = 1;
 	
@@ -88,7 +88,7 @@ public class dataAggregator {
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("GET");
 		conn.setRequestProperty("Accept", "application/json");
-		conn.setRequestProperty("X-Pattern", "Audi_EComGW_ae8bd28b");
+		conn.setRequestProperty("X-Pattern", "");
 		conn.setRequestProperty("X-Page-Items", xPageItems);
 		conn.setRequestProperty("X-Page", xPage);
 
